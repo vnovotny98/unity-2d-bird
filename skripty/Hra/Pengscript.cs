@@ -7,6 +7,7 @@ public class PengScript : MonoBehaviour
     public float Sila;
     public Rigidbody2D mujrigid;
     public SkoreScript Naraz;
+    public bool PengisLive = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class PengScript : MonoBehaviour
     void Update()
     {
         //pri stisknuti enteru zvednout penga
-        if (Input.GetKeyDown(KeyCode.Space) == true )
+        if (Input.GetKeyDown(KeyCode.Space) == true && PengisLive == true )
         {
             mujrigid.velocity = Vector2.up * Sila;
         }
@@ -28,5 +29,6 @@ public class PengScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Naraz.KonecHry();
+        PengisLive = false;
     }
 }
