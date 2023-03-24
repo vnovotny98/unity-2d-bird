@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pohybpipes : MonoBehaviour
+public class PohybPipesScript : MonoBehaviour
 {
     public float rychlostpohybu = 5;
     //public float mimoobraz = -40;

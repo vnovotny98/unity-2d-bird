@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PengScript : MonoBehaviour
+public class SkoreScript : MonoBehaviour
 {
-    public float Sila;
-    public Rigidbody2D mujrigid;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +13,6 @@ public class PengScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) == true )
-        {
-            mujrigid.velocity = Vector2.up * Sila;
-        }
+        
     }
 }
