@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 1474501789}
   m_Layer: 0
   m_Name: Skore Manager
-  m_TagString: ReferencezProsel
+  m_TagString: SkoreManTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1810618294}
   - component: {fileID: 1810618293}
   - component: {fileID: 1810618295}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Peng '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
