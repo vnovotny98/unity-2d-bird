@@ -18,11 +18,13 @@ public class PengScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //pri stisknuti enteru zvednout penga
         if (Input.GetKeyDown(KeyCode.Space) == true )
         {
             mujrigid.velocity = Vector2.up * Sila;
         }
     }
+    //pri colisi penga pouzit funkci KonecHry z SkoreScriptu
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Naraz.KonecHry();
