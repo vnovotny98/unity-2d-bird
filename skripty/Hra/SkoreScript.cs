@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SkoreScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int Skore;
+    public Text SkoreText;
 
-    // Update is called once per frame
-    void Update()
+    [ContextMenu("Prosel Pipes")]
+    public void ProselPipes()
     {
-        
+        Skore = Skore + 1;
+        SkoreText.text = Skore.ToString();
     }
 }
