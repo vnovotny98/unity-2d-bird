@@ -8,7 +8,7 @@ public class ProselPipesScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Pripojeni logy ze peng prosel pipes s jinym skriptem pomoci kodu - proselpipes script reference na Skore Script
+        //Pripojeni logiky ze peng prosel pipes s jinym skriptem pomoci kodu - proselpipes script reference na Skore Script
         logic = GameObject.FindGameObjectWithTag("SkoreManTag").GetComponent<SkoreScript>();
     }
 
