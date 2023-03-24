@@ -8,6 +8,7 @@ public class PengScript : MonoBehaviour
     public Rigidbody2D mujrigid;
     public SkoreScript Naraz;
     public bool PengisLive = true;
+    public AudioSource sound2;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class PengScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true && PengisLive == true )
         {
             mujrigid.velocity = Vector2.up * Sila;
+            sound2.Play();
         }
     }
     //pri colisi penga pouzit funkci KonecHry z SkoreScriptu
