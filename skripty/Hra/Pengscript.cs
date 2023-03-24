@@ -16,6 +16,8 @@ public class Pengscript : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) == true )
-        mujrigid.velocity = Vector2.up * Sila;
+        {
+            mujrigid.velocity = Vector2.up * Sila;
+        }
     }
 }
