@@ -1204,6 +1204,8 @@ MonoBehaviour:
   Naraz: {fileID: 0}
   PengisLive: 1
   sound2: {fileID: 1810618296}
+  dolnilimit: -40
+  hornilimit: 40
 --- !u!82 &1810618296
 AudioSource:
   m_ObjectHideFlags: 0

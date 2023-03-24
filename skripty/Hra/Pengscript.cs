@@ -9,6 +9,8 @@ public class PengScript : MonoBehaviour
     public SkoreScript Naraz;
     public bool PengisLive = true;
     public AudioSource sound2;
+    public float dolnilimit = -40;
+    public float hornilimit = 40;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,12 @@ public class PengScript : MonoBehaviour
         {
             mujrigid.velocity = Vector2.up * Sila;
             sound2.Play();
+        }
+
+        if (transform.position.y > hornilimit || transform.position.y < dolnilimit)
+        {
+            Naraz.KonecHry();
+            PengisLive = false;
         }
     }
     //pri colisi penga pouzit funkci KonecHry z SkoreScriptu
