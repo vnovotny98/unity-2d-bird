@@ -1,1 +1,1 @@
-# unity-2d-bird
+Unity 2D Bird - Projekt v C#
