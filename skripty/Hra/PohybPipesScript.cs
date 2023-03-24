@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PohybPipesScript : MonoBehaviour
 {
-    public float rychlostpohybu = 5;
+    public float rychlostpohybu;
     //public float mimoobraz = -40;
     // Start is called before the first frame update
     void Start()
